@@ -14,7 +14,7 @@
 # In[1]:
 
 
-get_ipython().system('pip -q install ./python')
+#get_ipython().system('pip -q install ./python')
 
 
 # The environments corresponding to both versions of the environment are already saved in the Workspace and can be accessed at the file paths provided below.  
@@ -28,7 +28,7 @@ from unityagents import UnityEnvironment
 import numpy as np
 
 # select this option to load version 1 (with a single agent) of the environment
-env = UnityEnvironment(file_name='/data/Reacher_One_Linux_NoVis/Reacher_One_Linux_NoVis.x86_64')
+env = UnityEnvironment(file_name='Reacher.exe')
 
 # select this option to load version 2 (with 20 agents) of the environment
 # env = UnityEnvironment(file_name='/data/Reacher_Linux_NoVis/Reacher.x86_64')
@@ -680,7 +680,7 @@ plot_training(scores)
 import matplotlib.pyplot as plt
 
 # Set plotting options
-get_ipython().run_line_magic('matplotlib', 'inline')
+#get_ipython().run_line_magic('matplotlib', 'inline')
 plt.style.use('ggplot')
 np.set_printoptions(precision=3, linewidth=120)
 
